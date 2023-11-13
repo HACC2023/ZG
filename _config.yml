@@ -1,0 +1,8 @@
+title: Envision Lahaina
+description: A web portal to facilitate Civic Engagement Revolving Lahaina
+google_analytics:
+show_downloads: true
+theme: jekyll-theme-slate
+
+gems:
+  - jekyll-mentions

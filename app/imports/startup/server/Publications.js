@@ -4,6 +4,7 @@ import { Posts } from '../../api/post/post';
 import { Comments } from '../../api/comment/comment';
 import { Surveys } from '../../api/survey/survey';
 import { Votes } from '../../api/vote/vote';
+import { ModCards } from '../../api/modcard/modcard';
 
 Meteor.publish(Comments.userPublicationName, function () {
   if (this.userId) {
@@ -28,6 +29,13 @@ Meteor.publish(Posts.userPublicationName, function () {
 Meteor.publish(Votes.userPublicationName, function () {
   if (this.userId) {
     return Votes.collection.find();
+  }
+  return this.ready();
+});
+
+Meteor.publish(ModCards.userPublicationName, function () {
+  if (this.userId) {
+    return ModCards.collection.find();
   }
   return this.ready();
 });

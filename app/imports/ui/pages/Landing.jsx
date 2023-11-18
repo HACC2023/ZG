@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
+import { EmojiSmile } from 'react-bootstrap-icons';
 
 const Landing = () => (
   <div>
@@ -10,7 +11,8 @@ const Landing = () => (
           <Col xs={6}>
             <Image
               src="/images/Generative-AI.png"
-              width={500}
+              width="80%"
+              height="80%"
               className="image-spacing"
               style={{
                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.5)' }}
@@ -19,8 +21,8 @@ const Landing = () => (
           <Col xs={6}>
             <Image
               src="/images/Embedded-VR.png"
-              width={500}
-              height={315}
+              width="80%"
+              height="80%"
               className="image-spacing"
               style={{
                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.5)' }}
@@ -37,9 +39,9 @@ const Landing = () => (
           <Col xs={6}>
             <br />
             <h2 style={{ color: 'white' }}>Our Mission</h2>
-            <br />
             {/* eslint-disable-next-line max-len */}
-            <p style={{ color: 'white', fontSize: '20px' }}>We want to create a web portal that facilitates the civic engagement around how to rebuild Lahaina, Maui, including surveys, forums, sharing design concepts with visual and data models for economic, environmental, etc. analysis.</p>
+            <p style={{ color: 'white', fontSize: '110%' }}>We want to create a web portal that facilitates the civic engagement around how to rebuild Lahaina, Maui, including surveys, forums, sharing design concepts with visual and mappinig models for economic, environmental, etc. analysis.</p>
+            <EmojiSmile style={{ color: 'white' }} size="25%" />
           </Col>
         </Row>
       </Container>
@@ -53,7 +55,8 @@ const Landing = () => (
           <Col xs={6}>
             <Image
               src="/images/forum-page2.png"
-              width={500}
+              width="80%"
+              height="80%"
               className="image-spacing"
               style={{
                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.5)' }}
@@ -62,8 +65,8 @@ const Landing = () => (
           <Col xs={6}>
             <Image
               src="/images/Survey-Page.png"
-              width={500}
-              height={325}
+              width="80%"
+              height="80%"
               className="image-spacing"
               style={{
                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.5)' }}

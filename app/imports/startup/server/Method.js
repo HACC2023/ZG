@@ -2,12 +2,6 @@ import { Meteor } from 'meteor/meteor';
 import { HTTP } from 'meteor/http';
 import cloudinary from 'cloudinary';
 
-cloudinary.config({
-  cloud_name: 'you-own-key',
-  api_key: 'you-own-key',
-  api_secret: 'you-own-key',
-});
-
 Meteor.methods({
   // eslint-disable-next-line meteor/audit-argument-checks
   async generateImage(prompt) {
@@ -15,7 +9,7 @@ Meteor.methods({
       const response = await HTTP.call('POST', 'https://api.openai.com/v1/images/generations', {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${'you-own-key'}`,
+          Authorization: `Bearer ${'your key'}`,
         },
         data: {
           model: 'dall-e-3',

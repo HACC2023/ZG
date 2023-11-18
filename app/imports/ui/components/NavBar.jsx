@@ -36,14 +36,14 @@ const NavBar = () => {
             ) : ''}
             {currentUser ? (
               <NavDropdown title="Visualize Toolset" className="white-text-dropdown">
+                <NavDropdown.Item as={NavLink} to="/model">
+                  <Nav.Link as={NavLink} to="/model" key="model" style={{ color: 'black' }}>Model</Nav.Link>
+                </NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/dalle3">
                   <Nav.Link as={NavLink} to="/dalle3" key="dalle" style={{ color: 'black' }}>Dall-E3</Nav.Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/mapping">
                   <Nav.Link as={NavLink} to="/mapping" key="gis" style={{ color: 'black' }}>Gis-Map</Nav.Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item as={NavLink} to="/data">
-                  <Nav.Link as={NavLink} to="/data" key="data" style={{ color: 'black' }}>Data (Coming Soon) </Nav.Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/external">
                   <Nav.Link as={NavLink} to="/external" key="external" style={{ color: 'black' }}>External</Nav.Link>
